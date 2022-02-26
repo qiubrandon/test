@@ -8,12 +8,6 @@ def rowfind(letter,fr,sr,lr):
         return sr
     else:
         return lr
-    
-def wordcheck(x,y):
-    for num in range(len(y)):
-        if y[num] == x:
-            return True
-    return False
 def wordbank():
     words = "trope plate trash paper plane names loops brick spicy water jeans genes strip fires roman grape paced vault amber nanny scalp drift piles scalp final trace quite quiet dense cocky based doubt baggy click feint these puffy diver slept speed fetus pound gland globe teach"
     words = words.split()
@@ -27,7 +21,6 @@ print(" ".join(result))
 print("\n")
 count = 0
 finalprint = []
-wronglist = []
 firstrow = ["Q","W","E","R","T","Y","U","I","O","P"]
 secondrow = ["A","S","D","F","G","H","J","K","L"]
 lastrow = ["Z","X","C","V","B","N","M"]
@@ -66,7 +59,6 @@ while True:
                                 row[qq] = " "
                             
     print("".join(result))
-    wronglist = sorted(wronglist)
     print(" ".join(firstrow))
     print(" ".join(secondrow))
     print(" ".join(lastrow))
